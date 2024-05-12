@@ -1,3 +1,4 @@
 #!/bin/bash
-weather --info "$LOCATION"
-weather -f -a -v "$LOCATION"
+{ weather --info "$LOCATION"
+weather -f -a -v "$LOCATION"; } |
+less
